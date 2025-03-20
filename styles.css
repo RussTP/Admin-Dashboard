@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.container div {
+    padding: 2em;
+}
+
+.header {
+    display: grid;
+    background-color: blueviolet;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column: 2/5;
+    grid-row: 1;
+    gap: 1em;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+
+.sidebar {
+    background-color: blue;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/4;
+    gap: 2em;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    grid-column: 2/4;
+    grid-row: 2;
+    gap: 1em;
+}
+
+.main .card {
+    height: 15em;
+    background-color: white;
+    
+}
+
+.right-panel {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 250px));
+    grid-column: 4;
+    grid-row:2;
+    gap: 20px;
+}
+
+.right-panel .right-card {
+    height: 350px;
+    background-color: white;
+}
