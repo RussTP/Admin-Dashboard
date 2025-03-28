@@ -82,6 +82,11 @@ input::placeholder {
 
  .search-icon {
     position: absolute;
+
+}
+
+.search-icon:hover {
+cursor:default;
 }
 
 /* Welcome message on header */
@@ -140,9 +145,16 @@ button:hover {
     background-color:  var(--batyellow);
 }
 
-svg {
+.dashboard-logo svg, .header svg {
     cursor: pointer;
 }
+
+ .header .bell svg:hover {
+
+    fill: var(--batyellow);
+}
+
+
 
 
 /* user info top right alerts etc*/
@@ -210,6 +222,28 @@ a:hover {
     color: var(--main);
 }
 
+.sidebar li svg {
+    transition: all 0.5s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.sidebar li svg:hover {
+    transform: scale(1.3) rotate(360deg);
+    fill: color black;
+}
+
+.batlogo {
+    transition: all 1.0s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.batlogo:hover {
+fill: var(--main);
+transform: scale(1.3) rotate(1080deg);
+}
+
 /* main article area, cards / right side cards*/
 
 .main {
@@ -231,6 +265,9 @@ a:hover {
 
 }
 
+.main svg:hover{
+    cursor: pointer;
+}
 
 /* main card*/
 
@@ -268,6 +305,12 @@ justify-content: flex-end;
 align-self: flex-end;
  
 }
+
+.card-icon svg:hover {
+    fill: var(--main);
+
+}
+
 
 /* right side cards* anncouncement/trending*/
 
